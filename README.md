@@ -8,7 +8,7 @@ This website showcases my **skills, projects, and achievements** as I grow in th
 ---
 
 ## 🧑‍💻 About Me
-Hi, I'm **[Nisansala Ruwan Pathirana]**  
+Hi, I'm **Nisansala Ruwan Pathirana**  
 - 🎓 Currently pursuing a **BSc (Hons) in Information Technology and Management**.  
 - 💡 Interested in **Data Analysis, Business Analysis, Project Management, and Data Science**.  
 - 🚀 Passionate about building projects that solve real-world problems.  
