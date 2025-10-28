@@ -1,61 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nisansala Ruwan Pathirana's Portfolio 🌟</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Nisansala Ruwan Pathirana — Portfolio</title>
+
+  <style>
+    :root{--accent:#4b0082;--bg:#f4f4f9;--card:#ffffff}
+    *{box-sizing:border-box}
+
+    body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;
+margin:0;
+background:var(--bg);
+color:#222}
+
+    .nav{background:linear-gradient(90deg,var(--accent),#6a0dad);
+color:#fff;
+padding:2rem;
+text-align:center}
+
+    .container{max-width:980px;
+margin: -40px auto 40px;
+padding:1rem}
+
+    .card{background:var(--card);
+border-radius:12px;
+padding:1.25rem;
+margin:1rem 0;
+box-shadow:0 8px 20px rgba(20,20,40,0.08)}
+
+    h1{margin:.2rem 0}
+
+    p.lead{margin:.2rem 0;color:#333}
+
+    .grid{display:grid;
+grid-template-columns:1fr 320px;
+gap:1rem}
+
+    .skills ul{columns:2;
+list-style:none;
+padding:0;
+margin:0}
+
+    a.button{display:inline-block;
+padding:.45rem .8rem;
+border-radius:8px;
+text-decoration:none;
+background:var(--accent);
+color:#fff}
+
+    footer{text-align:center;
+padding:1rem;
+color:#666;
+font-size:.9rem}
+
+    .contact a{color:var(--accent);
+text-decoration:none}
+
+    @media(max-width:880px){.grid{grid-template-columns:1fr} .nav{padding:1.25rem}}
+
+    .meta{font-size:.9rem;
+color:#666}
+
+    .project{border-left:4px solid rgba(75,0,130,0.08);
+padding:0.6rem;
+margin:0.6rem 0}
+
+    .badges{display:flex;
+gap:.5rem;
+flex-wrap:wrap}
+
+    .badge{background:#f0eef8;
+padding:.25rem .5rem;border-radius:999px;
+font-size:.8rem;
+color:var(--accent)}
+  </style>
+
 </head>
+
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Hi, I'm Nisansala Ruwan Pathirana ✨</h1>
-    <p>Future Data Analyst | Business Analyst | Project Manager</p>
+
+  <header class="nav">
+    <h1>Nisansala Ruwan Pathirana</h1>
+    <p class="meta">IT & Management Undergraduate — B.Sc.(Hons) in Information Technology & Management, University of Colombo</p>
+    <p style="margin-top:.6rem">Data Analysis • Data Science • Business Analysis • Machine Learning • Web Development</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am currently pursuing my degree in <b>Information Technology & Management in Faculty of Science, University of Colombo</b>.  
-      I am passionate about <b>Data Analysis, Business Analysis, Data Science and Project Management</b>.
-    </p>
-  </section>
+  <main class="container">
+    <div class="grid">
+      <section>
+        <div class="card">
+          <h2>Profile</h2>
+          <p class="lead">An ambitious and dedicated undergraduate at the University of Colombo, specializing in Information Technology & Management. Skilled in programming, web development, machine learning techniques and statistical analysis. Passionate about applying analytical and technical expertise to solve business challenges and support data-driven decision-making.</p>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, Java, SQL</li>
-      <li>HTML, CSS, JavaScript, PHP</li>
-      <li>Power BI, Excel, GitHub, R, SPSS, Octave</li>
-    </ul>
-  </section>
+          <h3>Technical Summary</h3>
+          <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">R</span>
+            <span class="badge">Java</span>
+            <span class="badge">SQL</span>
+            <span class="badge">HTML/CSS/JS</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">SPSS</span>
+          </div>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    
+          <h3 style="margin-top:1rem">Selected Projects</h3>
+          <div class="project">
+            <strong>Retail Sales Analysis with SQL Server & Power BI</strong>
+            <div class="meta">Interactive Power BI dashboard for retail transaction insights — <a href="https://github.com/nisansalasandu/Retail-Sales-Analysis-PowerBI-SQL.git" target="_blank">GitHub</a> (Aug 2025)</div>
+          </div>
 
-    <div class="project">
-      <h3>📊 Retail Sales Analysis</h3>
-      <p>SQL + Power BI project analyzing retail transaction data.</p>
-      <a href="https://github.com/nisansalasandu/Retail-Sales-Analysis-PowerBI-SQL.git" target="_blank">View Project</a>
+          <div class="project">
+            <strong>Logistics Shipment Delay Prediction</strong>
+            <div class="meta">Machine learning pipeline (Python, Kaggle, Google Colab) — <a href="https://www.kaggle.com/code/nisansalaruwanpathi/logistics-shipment-delayprediction/notebook" target="_blank">Kaggle Notebook</a> (Aug 2025)</div>
+          </div>
+
+          <div class="project">
+            <strong>AI-Powered Predictive Blockchain Architecture</strong>
+            <div class="meta">Group research project on pharma supply chain management (ongoing)</div>
+          </div>
+
+          <h3 style="margin-top:1rem">Education</h3>
+          <p class="meta">University of Colombo — B.Sc.(Hons) in Information Technology & Management — CGPA 3.36 / 4.0</p>
+
+          <h3 style="margin-top:1rem">Certifications</h3>
+          <ul>
+            <li>Foundation of Project Management —  Department of Civil Engineering, Faculty of Engineering, Univ. of Moratuwa (Jun 2025)</li>
+            <li>Python for Beginners — Univ. of Moratuwa (Jun 2025)</li>
+            <li>Master Microsoft Power BI — Alison (Jun 2025)</li>
+            <li>R Basics — edX Verified Certificate for Data Science (Dec 2024)</li>
+            <li> Data Analytics Using Microsoft Power BI | Online Course | Alison (Jun 2025)</li>
+            <li>Data Analytics Basics for Everyone – edX Verified Certificate (May 2024)</li>
+            <li>Data Analytics Essentials – edX (May 2024)</li>
+            <li> Diploma in Information Technology, IMBS Private Campus (2021)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Interests & Tools</h2>
+          <p class="meta">Business Analysis | Data Analysis | Machine Learning | Predictive Analytics | Web Development</p>
+          <h3>Tools</h3>
+          <ul>
+            <li>Excel (advanced), Power BI, Tableau (basic)</li>
+            <li>MySQL, MongoDB</li>
+            <li>Google Colab, SPSS, Minitab</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card contact">
+          <h3>Contact</h3>
+          <p class="meta">Phone: +94 76 217 0336</p>
+          <p class="meta">Email: <a href="mailto:nisansala.ruwanpathirana0@gmail.com">nisansala.ruwanpathirana0@gmail.com</a></p>
+          <p class="meta">LinkedIn: <a href="https://www.linkedin.com/in/nisansala-ruwanpathirana-602a2a2a6" target="_blank">nisansala-ruwanpathirana</a></p>
+        </div>
+
+        <div class="card">
+          <h4>Quick Facts</h4>
+          <ul class="meta">
+            <li>Languages: Sinhala (Native), English (Proficient)</li>
+            <li>Soft skills: Teamwork, Problem-solving, Communication</li>
+            <li>Extra-curricular: Euphony (Faculty of Science), ICCMM 2025 Organizing Committee</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>References</h4>
+          <p class="meta">Dr. Prabhath Liyanage — Senior Lecturer, University of Colombo<br>+94 76 724 1657 — <a href="mailto:liyanage@maths.cmb.ac.lk">liyanage@maths.cmb.ac.lk</a></p>
+        </div>
+      </aside>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:nisansala.ruwanpathirana0@email.com">nisansala.ruwanpathirana0@email.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/nisansala-ruwan-pathirana-602a2a2a6" target="_blank">linkedin.com/in/nisansala-ruwan-pathirana-602a2a2a6</a></p>
-    <p>GitHub: <a href="https://github.com/nisansalasandu" target="_blank">github.com/nisansalasandu</a></p>
-  </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
-    <p>⭐ Designed by Nisansala Ruwan Pathirana | © 2025</p>
+    <div class="meta">© Nisansala Ruwan Pathirana • Built with ❤️ • Last updated 2025</div>
   </footer>
+
 </body>
 </html>
-
